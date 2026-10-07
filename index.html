@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VidMorph AI Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">VidMorph AI</div>
+    <div class="badge">AI VIDEO STUDIO</div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <h1>Transform Your Video With AI</h1>
+      <p>
+        Change clothes, pants, shoes, hair, body, face, background
+        and visual style with your own instructions.
+      </p>
+    </section>
+
+    <section class="card">
+
+      <h2>Upload Your Video</h2>
+
+      <label class="upload-box">
+        <input type="file" id="videoInput" accept="video/*">
+        <span>🎬</span>
+        <strong>Select Video</strong>
+        <small>MP4, MOV, WEBM and other video formats</small>
+      </label>
+
+      <div id="videoPreview" class="preview"></div>
+
+      <h2>Reference Image (Optional)</h2>
+
+      <label class="upload-box">
+        <input type="file" id="imageInput" accept="image/*">
+        <span>🖼️</span>
+        <strong>Add Reference Image</strong>
+        <small>Use an image for your desired style</small>
+      </label>
+
+      <div id="imagePreview" class="preview"></div>
+
+      <h2>What Do You Want To Change?</h2>
+
+      <div class="options">
+
+        <label>
+          <input type="checkbox" value="Clothes">
+          <span>👕 Clothes</span>
+        </label>
+
+        <label>
+          <input type="checkbox" value="Pants">
+          <span>👖 Pants</span>
+        </label>
+
+        <label>
+          <input type="checkbox" value="Shoes">
+          <span>👟 Shoes</span>
+        </label>
+
+        <label>
+          <input type="checkbox" value="Hair">
+          <span>💇 Hair</span>
+        </label>
+
+        <label>
+          <input type="checkbox" value="Body">
+          <span>🧍 Body</span>
+        </label>
+
+        <label>
+          <input type="checkbox" value="Face">
+          <span>🙂 Face</span>
+        </label>
+
+        <label>
+          <input type="checkbox" value="Background">
+          <span>🌄 Background</span>
+        </label>
+
+        <label>
+          <input type="checkbox" value="Accessories">
+          <span>🕶️ Accessories</span>
+        </label>
+
+      </div>
+
+      <h2>Describe Your Transformation</h2>
+
+      <textarea
+        id="prompt"
+        placeholder="Example: Change my yellow shirt to a black leather jacket, change the pants to blue jeans, add white sneakers and put me in a cinematic city background..."
+      ></textarea>
+
+      <button id="generateBtn">
+        ✨ Generate AI Video
+      </button>
+
+      <div id="status" class="status"></div>
+
+    </section>
+
+    <section class="card result-card">
+
+      <h2>Generated Video</h2>
+
+      <div id="result">
+        <p>Your transformed video will appear here.</p>
+      </div>
+
+    </section>
+
+    <section class="info">
+      <h3>⚡ VidMorph AI Studio</h3>
+      <p>
+        Upload a video, choose what you want to change,
+        describe your idea and generate your transformed video.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 VidMorph AI Studio
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
